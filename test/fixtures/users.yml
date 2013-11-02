@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  uid: MyString
+  provider: MyString
+  email: MyString
+  first_name: MyString
+  last_name: MyString
+  github_username: MyString
+  ssh_username: MyString
+  ssh_public_key: MyString
+  linux_password_hash: MyString
+  enabled: false
+
+two:
+  uid: MyString
+  provider: MyString
+  email: MyString
+  first_name: MyString
+  last_name: MyString
+  github_username: MyString
+  ssh_username: MyString
+  ssh_public_key: MyString
+  linux_password_hash: MyString
+  enabled: false

@@ -1,0 +1,9 @@
+<h2>Contact</h2>
+<div>
+<% if current_user %>
+  <%= current_user.first_name %>!  Contact us at: raravena80@yahoo.com
+<% else %>
+  <%= link_to "Log in", "/auth/google_oauth2" %>
+<% end %>
+
+</div>

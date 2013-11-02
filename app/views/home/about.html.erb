@@ -1,0 +1,10 @@
+<h2>About Us</h2>
+<div>
+<% if current_user %>
+  <%= current_user.first_name %>! We are a group of very talented engineers.
+  If you'd like to find out more checkout http://blog.serverbooter.com
+<% else %>
+  <%= link_to "Log in", "/auth/google_oauth2" %>
+<% end %>
+
+</div>

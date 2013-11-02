@@ -1,0 +1,45 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uid</th>
+      <th>Provider</th>
+      <th>Email</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Github username</th>
+      <th>Ssh username</th>
+      <th>Ssh public key</th>
+      <th>Linux password hash</th>
+      <th>Enabled</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.uid %></td>
+        <td><%= user.provider %></td>
+        <td><%= user.email %></td>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.github_username %></td>
+        <td><%= user.ssh_username %></td>
+        <td><%= user.ssh_public_key %></td>
+        <td><%= user.linux_password_hash %></td>
+        <td><%= user.enabled %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
