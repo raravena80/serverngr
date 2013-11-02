@@ -1,4 +1,4 @@
-= Cloud Server Manager
+# Cloud Server Manager
 
 Cloud Server Manager is Rails 4.x application that can be used to manage servers in cloud providers.
 These cloud providers can be AWS, Rackspace Cloud, HP Cloud, or any other provider that provides an
@@ -6,20 +6,20 @@ API to interact with its services.
 
 This is a barebones app and needs to be tailored for specific needs.
 
-== Installation
+## Installation
 
-  Use RVM or System Ruby 2.x or later.
+Use RVM or System Ruby 2.x or later.
 
-  `git clone https://github.com/raravena80/servermgr.git`
+`git clone https://github.com/raravena80/servermgr.git`
 
 ``` ruby
   gem install rails
   bundle install
 ```
 
-== Getting Started
+## Getting Started
 
-=== 1. Configuration
+### 1. Configuration
 
   edit servermgr/config/database.yml
 
@@ -56,7 +56,7 @@ production:
 
 ```
 
-=== 2. Setup
+### 2. Setup
   This esentially creates and migrates all dbs: production, dev, and test.
 
 ``` bash
@@ -80,12 +80,12 @@ ROLES: [user, admin]
 ```
 
 
-=== 3. Development Environment Deployment
+### 3. Development Environment Deployment
 
   Run: `rails s` and then
   point your browser to `http://localhost:3000`
 
-=== 4. Production Deployment
+### 4. Production Deployment
 
   There are multiple options for deploying code to a production environment.
   Some of the more popular options are running deployment using:
@@ -93,6 +93,6 @@ ROLES: [user, admin]
   - Capistrano, mod_passenger with Apache or Nginx
   - Capistrano with Unicorn and reverse proxy through Nginx
 
-=== 5. Testing
+### 5. Testing
 
   More on this later...
